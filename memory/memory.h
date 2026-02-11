@@ -7,6 +7,8 @@ public:
     static const size_t SIZE = 1024 * 1024; // 1MB
     uint8_t data[SIZE];
 
+    Memory();
+
     uint8_t read8(uint32_t addr);
     uint32_t read32(uint32_t addr);
 

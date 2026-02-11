@@ -1,5 +1,12 @@
 #include "memory.h"
 
+Memory::Memory() {
+    // initialize memory to 0
+    for (uint32_t i = 0; i < Memory::SIZE; ++i) {
+        data[i] = 0;
+    }
+}
+
 uint8_t Memory::read8(uint32_t addr) {
     if (addr >= SIZE) {
         throw std::out_of_range("Memory read8 out of bounds");

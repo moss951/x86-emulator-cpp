@@ -6,11 +6,6 @@ int main() {
     CPU cpu;
     Memory mem;
 
-    // initialize memory to 0
-    for (uint32_t i = 0; i < Memory::SIZE; ++i) {
-        mem.data[i] = 0;
-    }
-
     // program
     mem.write8(0, 0xB8); // MOV
     mem.write32(1, 0x12345678); // 32 bit int

@@ -18,7 +18,7 @@ public:
         bool SF;
         bool OF;
     } flags;
-    
+
     CPU();
     uint8_t fetch8(Memory& mem);
     uint32_t fetch32(Memory& mem);
